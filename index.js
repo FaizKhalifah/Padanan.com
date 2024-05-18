@@ -1,5 +1,6 @@
 import express from "express";
 import mongoose from "mongoose";
+import padananRouter from "./route/padananRoute.js";
 
 const app = express();
 const connection = 'mongodb://localhost:27017/padanan';
@@ -9,6 +10,7 @@ mongoose.connect(connection).then((result)=>{
 }
 ).catch((err) => console.log(err));
 
-app.get('/',(req,res)=>{
-    res.send("hello world");
-});
+
+app.use(express.static('views/'));
+app.set('view engine', 'ejs');
+app.use(padananRouter);
