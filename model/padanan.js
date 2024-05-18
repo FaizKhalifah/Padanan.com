@@ -8,5 +8,5 @@ const newPadanan = mongoose.Schema({
     pengertian:String
 })
 
-const padanan = mongoose.model("padanan",newPadanan);
-export default padanan;
+const Padanan = mongoose.model("padanan",newPadanan);
+export default Padanan;
