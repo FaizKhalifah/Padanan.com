@@ -23,7 +23,6 @@ async function readPadanan(kata){
         kata:kata
     }
     const padanan = await Padanan.findOne(filter);
-    console.log(padanan);
     if(padanan){
         return padanan.padanan;
     }else{
