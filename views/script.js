@@ -10,6 +10,6 @@ form.addEventListener('submit',async(e)=>{
         })
     });
     const data = await res.json();
-    console.log(data.padanan);
+    console.log(data);
     return;
 })

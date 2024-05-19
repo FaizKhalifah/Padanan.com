@@ -24,7 +24,7 @@ async function readPadanan(kata){
     }
     const padanan = await Padanan.findOne(filter);
     if(padanan){
-        return padanan.padanan;
+        return padanan;
     }else{
         return "kata tersebut tidak ada padanannya";
     }
