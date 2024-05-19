@@ -64,6 +64,14 @@ textarea{
     border:gray solid 1px;
 }
 .lower{
-    display: none;
+    display: flex;
+    flex-direction:column;
+    gap:1rem;
+    justify-content:flex-start;
+    align-items:flex-start;
     padding: 5rem;
+}
+
+#headingPengertian{
+    display: none;
 }
