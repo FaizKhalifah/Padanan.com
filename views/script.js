@@ -1,7 +1,7 @@
     const form = document.querySelector("form");
     form.addEventListener('submit',async(e)=>{
         e.preventDefault();
-        const kata = form.istilah.value.trim();
+        const kata = form.istilah.value.trim().toLowerCase();
         const res = await fetch('/readPadanan',{
             method:'POST',
             headers: {'Content-Type': 'application/json'},
